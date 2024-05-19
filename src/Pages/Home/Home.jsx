@@ -1,9 +1,11 @@
+import Swiper from "swiper";
+import Slider from "./Slider/Slider";
 
 
  const Home =()=>{
     return (
         <div>
-            this is Home
+           <Slider></Slider>
         </div>
     );
 }
