@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import Slider from "./Slider/Slider";
 import OrderOnline from "./OrderOnline/OrderOnline";
+import PopularMenu from "./PopularMenu/PopularMenu";
 
 
  const Home =()=>{
@@ -11,6 +12,9 @@ import OrderOnline from "./OrderOnline/OrderOnline";
             </div>
             <div className="my-10">
              <OrderOnline></OrderOnline>
+            </div>
+            <div className="my-10">
+             <PopularMenu></PopularMenu>
             </div>
 
         </div>

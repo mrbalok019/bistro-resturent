@@ -15,16 +15,17 @@ import slide3 from '../../../assets/home/slide3.jpg'
 import slide4 from '../../../assets/home/slide4.jpg'
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import SectionTitle from "../../../Component/SectionTitle/SectionTitle";
 
 const OrderOnline = () => {
   return (
     <div>
 
-        <div className="flex flex-col mx-auto text-center mb-10">
-            <h1 className="text-xl text-[#D99904]"><i>---From 11:00am to 10:00pm---</i></h1>
-            <hr className="w-[424px] h-1 bg-[#E8E8E8] mx-auto"></hr>
-            <h1 className="text-5xl text-black">ORDER ONLINE</h1>
-            <hr className="w-[424px] h-1 bg-[#E8E8E8] mx-auto"></hr>
+        <div >
+            <SectionTitle
+              subHeader='---From 11:00am to 10:00pm---' 
+              header = 'ORDER ONLINE'
+            ></SectionTitle>
         </div>
 
       <>
