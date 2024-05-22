@@ -3,6 +3,7 @@ import Slider from "./Slider/Slider";
 import OrderOnline from "./OrderOnline/OrderOnline";
 import PopularMenu from "./PopularMenu/PopularMenu";
 import Featured from "./Featured/Featured";
+import Testimonial from "./Testimonial/Testimonial";
 
 
  const Home =()=>{
@@ -19,6 +20,9 @@ import Featured from "./Featured/Featured";
             </div>
             <div className="my-10">
              <Featured></Featured>
+            </div>
+            <div className="my-10">
+             <Testimonial></Testimonial>
             </div>
 
         </div>

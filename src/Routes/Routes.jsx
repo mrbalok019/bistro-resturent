@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from '../MainLAyout/MainLayout'
 import Home from '../Pages/Home/Home'
+import Menu from "../Pages/Menu/Menu";
 
 
 const router = createBrowserRouter(
@@ -16,7 +17,10 @@ const router = createBrowserRouter(
             {   
                 path:'/',
                 element: <Home></Home>,
-                // loader:()=>fetch('/estatesData.json')
+            },
+            {   
+                path:'/menu',
+                element: <Menu></Menu>
             },
            
 

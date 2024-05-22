@@ -1,0 +1,7 @@
+.featured-bg-img{
+    background:  rgba(21, 21, 21, 0.7);
+    background-image: url('../../../assets/home/featured.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+   
+}
