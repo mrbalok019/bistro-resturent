@@ -20,6 +20,7 @@ const Menu = () => {
                 <MenuCategory
                     category="offered"
                     buttonText="ORDER YOUR FAVOURATE FOOD"
+                    
                 />
 
             </div>
@@ -35,6 +36,7 @@ const Menu = () => {
                 <MenuCategory
                     category="dessert"
                     buttonText="ORDER YOUR FAVOURATE FOOD"
+                  
                 />
             </div>
             <div className="mt-12 mb-28">
@@ -49,6 +51,7 @@ const Menu = () => {
                 <MenuCategory
                     category="pizza"
                     buttonText="ORDER YOUR FAVOURATE FOOD"
+                   
                 />
             </div>
             <div className="mt-12 mb-28">
@@ -63,6 +66,7 @@ const Menu = () => {
                 <MenuCategory
                     category="salad"
                     buttonText="ORDER YOUR FAVOURATE FOOD"
+                  
                 />
             </div>
             <div className="mt-12 mb-28">
@@ -77,6 +81,7 @@ const Menu = () => {
                 <MenuCategory
                     category="soup"
                     buttonText="ORDER YOUR FAVOURATE FOOD"
+                   
                 />
 
 

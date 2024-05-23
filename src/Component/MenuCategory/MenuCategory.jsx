@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import MenuItems from '../MenuItems/MenuItems';
+import { Link } from 'react-router-dom';
 
 const MenuCategory = ({category,buttonText}) => {
     const [menu,setMenu] = useState([]);
-
+console.log(category);
     useEffect( ()=>{
         fetch('menu.json')
         .then(res =>res.json())
@@ -27,7 +28,10 @@ const MenuCategory = ({category,buttonText}) => {
 
             </section>
                 <div className=" flex justify-center">
-                   <button className='btn btn-ghost border-b-black border-b-4 my-12'>{buttonText} </button>
+                <Link to={`/ourshop/${category}`} className='btn btn-ghost border-b-black border-b-4 my-12'>
+                 <button >{buttonText} </button>
+                </Link>
+                   
                 </div>
 
         </div>
