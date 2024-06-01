@@ -1,14 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import './index.css'
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/Routes.jsx";
+import AuthProvider from "./Providers/AuthProvider.jsx";
 import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 
-  RouterProvider,
-} from "react-router-dom";
-import  router  from './Routes/Routes.jsx';
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Create a client
+const queryClient = new QueryClient();
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </QueryClientProvider>
+  </React.StrictMode>
+);

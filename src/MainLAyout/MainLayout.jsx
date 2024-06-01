@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
-import {Outlet} from 'react-router-dom'
+import {Outlet, useLocation} from 'react-router-dom'
 import Nav from '../Component/Nav/Nav';
 import Footer from '../Component/Footer/Footer';
-// import { AuthContext } from '../provaider/AuthProvider';
+
 
 const MainLayout = () => {
    
-    // }
+    const location = useLocation();
+    const noFooter = location.pathname.includes('login') || location.pathname.includes('registration');
 
 
     return (
@@ -17,10 +18,13 @@ const MainLayout = () => {
             </div>
             <div className='max-w-6xl mx-auto'>
                 
-                <Outlet></Outlet>
-               
+                <Outlet></Outlet>  
             </div> 
-            <Footer ></Footer>
+            <div>
+                {noFooter || <Footer ></Footer>}
+                
+            </div>
+            
         </div>
     );
 };

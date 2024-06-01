@@ -31,14 +31,7 @@ const Slider = () => {
                 <SwiperSlide >
 
                     <img className='z-[1]' src={slider1} alt="" />
-                         {/* <div className="z-[2] absolute  max-w-xs rounded-md shadow-md bg-gradient-to-r from-purple-500 to-pink-500">
-                        <div className="flex flex-col justify-between p-6 space-y-8 text-white">
-                            <div className="space-y-2">
-                                <h2 className="text-3xl font-semibold tracking-wide">Want To Explore?</h2>
-                            </div>
-                            <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50">Log in</button>
-                        </div>
-                    </div> */}
+                        
                     
                    
                 </SwiperSlide>
